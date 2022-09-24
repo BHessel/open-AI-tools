@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.intro-caption {
+  background-color: black;
+  padding: 5px;
+}
+
+.card-top {
+  margin-top: 15px;
+}
