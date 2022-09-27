@@ -11,7 +11,7 @@ const Navigation = () => {
         <Container>
           <Navbar.Brand href="/">OpenAI Test</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Nav className="me-auto">
+          <Nav>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="product-desc">Product Description</Nav.Link>
             <Nav.Link href="cold-emails">Cold Emails</Nav.Link>

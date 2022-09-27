@@ -42,6 +42,30 @@
   padding: 5px;
 }
 
-.card-top {
-  margin-top: 15px;
+.card-spacing {
+  margin: 25px 0px;
+}
+
+.pad-bottom {
+  margin-bottom: 15px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  visibility: hidden;
+}
+
+.carousel-indicators {
+  visibility: hidden;
+}
+
+.response-card {
+  padding: 48px;
+}
+
+.card-img-bottom {
+  /* padding: 20px 0px 0px 0px; */
+  margin-top: 20px;
+  object-fit: contain;
+  height: 500px;
+  opacity: .25;
 }

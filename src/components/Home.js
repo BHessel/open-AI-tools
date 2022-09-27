@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
         <Carousel interval={null}>
-          <Carousel.Item>
+          <Carousel.Item className="flex justify-content-center">
             <img className="d-block w-100" src={logo} alt="Open AI" />
           </Carousel.Item>
           <Carousel.Caption>
@@ -20,11 +20,11 @@ const Home = () => {
             </h3>
           </Carousel.Caption>
         </Carousel>
-      <Container className="card-top">
+      <Container className="card-spacing">
         <Row>
           {cardData.map((card) => {
             return (
-              <Col>
+              <Col lg={4}>
                 <Display
                   title={card.title}
                   text={card.text}
