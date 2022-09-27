@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Robot from "../images/Cartoon_Robot.png";
+import { Link } from "react-router-dom";
 const { Configuration, OpenAIApi } = require("openai");
 
 const ProductDesc = () => {
@@ -65,6 +66,11 @@ const ProductDesc = () => {
           )}
         </Card.Body>
       </Card>
+      <Link to="/">
+        <Button variant="outline-danger" className="pad-bottom">
+          Return Home
+        </Button>
+      </Link>
     </div>
   );
 };
