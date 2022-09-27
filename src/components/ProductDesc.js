@@ -4,15 +4,18 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Robot from "../images/Cartoon_Robot.png";
+import Spinner from "react-bootstrap/Spinner";
 import { Link } from "react-router-dom";
 const { Configuration, OpenAIApi } = require("openai");
 
 const ProductDesc = () => {
   const [robotResponse, setRobotResponse] = useState("");
+  const [loading, setLoading] = useState(false);
   const productNameRef = useRef();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const configuration = new Configuration({
       apiKey: process.env.REACT_APP_OPENAI_KEY,
@@ -28,6 +31,7 @@ const ProductDesc = () => {
       frequency_penalty: 0,
       presence_penalty: 0,
     });
+    setLoading(false);
     setRobotResponse(response.data.choices[0].text);
   };
 
@@ -48,7 +52,7 @@ const ProductDesc = () => {
             <Form.Text>Describe your product in detail</Form.Text>
           </Form.Group>
 
-          <Button variant="primary" size="lg" type="submit">
+          <Button variant="primary" size="lg" type="submit" dibabled={loading}>
             Generate Response
           </Button>
         </Form>
@@ -59,7 +63,13 @@ const ProductDesc = () => {
           <Card.Header>
             <h2>Response from GPT-3...</h2>
           </Card.Header>
-          {robotResponse ? (
+          {loading ? (
+            <Spinner
+              animation="border"
+              variant="primary"
+              className="spin-space"
+            />
+          ) : robotResponse ? (
             <Card.Text>{robotResponse}</Card.Text>
           ) : (
             <Card.Img variant="bottom" src={Robot} />
