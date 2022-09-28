@@ -7,7 +7,7 @@ const Display = (props) => {
   const { image, title, text, program } = props;
 
   return (
-    <>
+    <div key={title}>
       <Card>
         <Card.Img variant="top" src={image} style={{height: "215px"}}/>
         <Card.Body varient="bottom" style={{height: "170px"}}>
@@ -18,7 +18,7 @@ const Display = (props) => {
           </Link>
         </Card.Body>
       </Card>
-    </>
+    </div>
   );
 };
 

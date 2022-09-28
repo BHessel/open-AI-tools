@@ -17,6 +17,7 @@ const ColdEmails = () => {
     e.preventDefault();
     setLoading(true);
     const configuration = new Configuration({
+      organization: "org-mGmtet0AKojg6lMgNFlnQ8OU",
       apiKey: process.env.REACT_APP_OPENAI_KEY,
     });
     const openai = new OpenAIApi(configuration);

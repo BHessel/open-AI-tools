@@ -10,16 +10,16 @@ import { cardData } from "../cardCaptions.js";
 const Home = () => {
   return (
     <div>
-        <Carousel interval={null}>
-          <Carousel.Item className="flex justify-content-center">
-            <img className="d-block w-100" src={logo} alt="Open AI" />
-          </Carousel.Item>
-          <Carousel.Caption>
-            <h3 className="intro-caption">
-              Use Our Artificial Intelligence API to Create Content For You
-            </h3>
-          </Carousel.Caption>
-        </Carousel>
+      <Carousel interval={null}>
+        <Carousel.Item className="flex justify-content-center">
+          <img className="d-block w-100" src={logo} alt="Open AI" />
+        </Carousel.Item>
+        <Carousel.Caption>
+          <h3 className="intro-caption">
+            Use Our Artificial Intelligence API to Create Content For You
+          </h3>
+        </Carousel.Caption>
+      </Carousel>
       <Container className="card-spacing">
         <Row>
           {cardData.map((card) => {

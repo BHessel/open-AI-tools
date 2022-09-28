@@ -18,6 +18,7 @@ const ProductDesc = () => {
     setLoading(true);
 
     const configuration = new Configuration({
+      organization: "org-mGmtet0AKojg6lMgNFlnQ8OU",
       apiKey: process.env.REACT_APP_OPENAI_KEY,
     });
     const openai = new OpenAIApi(configuration);
@@ -52,7 +53,7 @@ const ProductDesc = () => {
             <Form.Text>Describe your product in detail</Form.Text>
           </Form.Group>
 
-          <Button variant="primary" size="lg" type="submit" dibabled={loading}>
+          <Button variant="primary" size="lg" type="submit" disabled={loading}>
             Generate Response
           </Button>
         </Form>
