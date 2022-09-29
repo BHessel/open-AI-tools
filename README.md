@@ -31,11 +31,11 @@ On each page you'll have an input field that, when submitted, connects to the AP
 
 As we await the response with our generated tweet, our robot is removed for a loading spinner which also disappears once the response is received and rendered to the page.
 ## Technologies
-[Create-React-App](https://create-react-app.dev/docs/getting-started)
-[React Bootstrap](https://react-bootstrap.github.io/components/alerts)
-[React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
-[OpenAI API](https://openai.com/api/)
-[Railway](https://railway.app/) - for deployment
+- [Create-React-App](https://create-react-app.dev/docs/getting-started)
+- [React Bootstrap](https://react-bootstrap.github.io/components/alerts)
+- [React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
+- [OpenAI API](https://openai.com/api/)
+- [Railway](https://railway.app/) - for deployment
 
 ## Use
 If you clone this repo, you can run it locally using `npm start`
