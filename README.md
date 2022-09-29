@@ -1,7 +1,7 @@
 <h1 align="center">OpenAI-Tools</h1>
 
 <p align="center">
-    <img src="./openAI.jpeg">
+    <img src="./src/images/openAI.jpeg">
     <img src="https://img.shields.io/github/followers/BHessel?style=social">
     <img src="https://img.shields.io/badge/made_by-Ben-blue.svg" >
     <img src="https://img.shields.io/github/languages/count/BHessel/open-AI-tools?color=green">
