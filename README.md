@@ -1,71 +1,41 @@
-# Getting Started with Create React App
+<h1 align="center">OpenAI-Tools</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <img src="./openAI.jpeg">
+    <img src="https://img.shields.io/github/followers/BHessel?style=social">
+    <img src="https://img.shields.io/badge/made_by-Ben-blue.svg" >
+    <img src="https://img.shields.io/github/languages/count/BHessel/open-AI-tools?color=green">
 
-## Available Scripts
+<h3 align="center"><a href="https://open-ai-tools.up.railway.app/">** Click for Live Demo **</a></h3>
+</p>
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+I had some time this past weekend to start playing around with [OpenAI's GPT-3](https://openai.com/api/) and thought it would be fun to build a user-friendly frontend for the playground.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**This app connects to OpenAI's API to generate Product Descriptions, Cold Emails, or make your next Tweet!**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+<p align="center">
+    <img src="https://media.giphy.com/media/HZmJfgID3DUXim2Oqk/giphy.gif" width="80%">
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The home page has a hero banner with a card for each type of request you can make to the AI.
 
-### `npm run build`
+On each page you'll have an input field that, when submitted, connects to the API with request prompt from the page (line 28)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+<img src="./readMeCode.png" width="70%">
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+As we await the response with our generated tweet, our robot is removed for a loading spinner which also disappears once the response is received and rendered to the page.
+## Technologies
+[Create-React-App](https://create-react-app.dev/docs/getting-started)
+[React Bootstrap](https://react-bootstrap.github.io/components/alerts)
+[React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
+[OpenAI API](https://openai.com/api/)
+[Railway](https://railway.app/) - for deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# open-AI-tutorial
+## Use
+If you clone this repo, you can run it locally using `npm start`

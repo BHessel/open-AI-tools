@@ -9,13 +9,23 @@ const Navigation = () => {
     <div>
       <Navbar bg="dark" variant="dark" sticky="top">
         <Container>
-          <Navbar.Brand href="/">OpenAI Test</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <h2>OpenAI Tools</h2>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Nav>
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="product-desc">Product Description</Nav.Link>
-            <Nav.Link href="cold-emails">Cold Emails</Nav.Link>
-            <Nav.Link href="tweets">Tweets</Nav.Link>
+            <Nav.Link href="/">
+              <b>Home</b>
+            </Nav.Link>
+            <Nav.Link href="product-desc">
+              <b>Product Description</b>
+            </Nav.Link>
+            <Nav.Link href="cold-emails">
+              <b>Cold Emails</b>
+            </Nav.Link>
+            <Nav.Link href="tweets">
+              <b>Tweets</b>
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>

@@ -16,7 +16,7 @@ const Tweets = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    
+
     const configuration = new Configuration({
       organization: "org-mGmtet0AKojg6lMgNFlnQ8OU",
       apiKey: process.env.REACT_APP_OPENAI_KEY,
@@ -25,7 +25,7 @@ const Tweets = () => {
 
     const response = await openai.createCompletion({
       model: "text-davinci-002",
-      prompt: `Generate a tweet abiyt: ${tweetRef.current.value}`,
+      prompt: `Generate a tweet about: ${tweetRef.current.value}`,
       temperature: 0.7,
       max_tokens: 70,
       top_p: 1,
